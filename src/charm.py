@@ -25,7 +25,7 @@ from interface_prometheus import Prometheus
 # Log messages can be retrieved using juju debug-log
 logger = logging.getLogger(__name__)
 
-class IpmiExporterOperatorCharm(ops.CharmBase):
+class IpmiExporterOperatorCharm(CharmBase):
     """Charm the service."""
 
     def __init__(self, *args):
@@ -228,4 +228,4 @@ def _uninstall_ipmi_exporter():
     subprocess.call(["groupdel", group])
 
 if __name__ == "__main__":
-    ops.main(IpmiExporterOperatorCharm)
+    main(IpmiExporterOperatorCharm)

@@ -7,10 +7,10 @@ from ops.framework import Object
 
 logger = logging.getLogger(__name__)
 
-class Prometheus(Object)
+class Prometheus(Object):
     """Prometheus scrape interface"""
 
-    def __init__(self, charm, relation)
+    def __init__(self, charm, relation):
         """Set initial values"""
         super().__init__(charm, relation)
         self._charm = charm

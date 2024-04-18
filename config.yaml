@@ -2,7 +2,7 @@ options:
   ipmi-exporter-version:
     type: string
     default: "v1.8.0"
-    decription: Version of IPMI Exporter to install.
+    description: Version of IPMI Exporter to install.
   listen-address:
     type: string
     default: "0.0.0.0:9290"
