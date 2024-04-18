@@ -1,0 +1,1 @@
+OPTIONS="--config.file=/var/lib/ipmi_exporter/ipmi_exporter.yaml"
