@@ -16,6 +16,7 @@ class Prometheus(Object):
         self._charm = charm
         self._relation_name = relation
 
+        logger.info(self._charm.on.events())
         self.framework.observe(
             self._charm.on[self._relation_name].relation_created,
             self._on_relation_created
